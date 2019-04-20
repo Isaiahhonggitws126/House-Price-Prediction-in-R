@@ -1,3 +1,6 @@
+# Note
+This project is currently under progress
+
 # House Price Determination
 
 Real estate agents account for many highlighted attributes that contribute to the value of home. Intuitively, it is simple to state that a house’s location is the sole determinant of its value. However, it is not the case because, a home buyer looks for many other things that help themselves to make an informed and rational decision. In this project, I wanted to determine the significance of other variables and find out if these affect a house’s value.
@@ -15,7 +18,7 @@ head(real_estate_data); dim(real_estate_data)
 plot(Price~Living.Area, data=real_estate_data, xlab="Living.Area", ylab = "Price")
 
 ```
-![] (static/scatterplot.png)
+![](static/scatterplot.png)
 
 There is a straight and moderate positive association between the variable Price and Living.Area with a few outliers.
 
@@ -26,7 +29,7 @@ model <- lm(Price~Living.Area, data=real_estate_data); summary(model)
 abline(model, col = 'Red')
 ```
 
-![](static/Scatterplot with regressionline.png)
+![](static/Scatterplot-with-regressionline.png)
 
 Output:
 ```
@@ -94,7 +97,7 @@ lines(newx, ci90[,2], col="blue"); lines(newx,ci90[,3],col="blue")
 
 ```
 
-![](static/Superimposed plot.png)
+![](static/Superimposed-plot.png)
 
 
 ## Built With
