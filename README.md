@@ -29,7 +29,7 @@ model <- lm(Price~Living.Area, data=real_estate_data); summary(model)
 abline(model, col = 'Red')
 ```
 
-![](static/Scatterplot-with-regressionline.png)
+![](static/regressionline.png)
 
 Output:
 ```
@@ -97,7 +97,7 @@ lines(newx, ci90[,2], col="blue"); lines(newx,ci90[,3],col="blue")
 
 ```
 
-![](static/Superimposed-plot.png)
+![](static/SuperimposedPlot.png)
 
 
 ## Built With
