@@ -15,7 +15,7 @@ head(real_estate_data); dim(real_estate_data)
 plot(Price~Living.Area, data=real_estate_data, xlab="Living.Area", ylab = "Price")
 
 ```
-[] (static/scatterplot.png)
+![] (static/scatterplot.png)
 
 There is a straight and moderate positive association between the variable Price and Living.Area with a few outliers.
 
@@ -26,7 +26,7 @@ model <- lm(Price~Living.Area, data=real_estate_data); summary(model)
 abline(model, col = 'Red')
 ```
 
-[](static/Scatterplot with regressionline.png)
+![](static/Scatterplot with regressionline.png)
 
 Output:
 ```
@@ -94,7 +94,7 @@ lines(newx, ci90[,2], col="blue"); lines(newx,ci90[,3],col="blue")
 
 ```
 
-[](static/Superimposed plot)
+![](static/Superimposed plot.png)
 
 
 ## Built With
