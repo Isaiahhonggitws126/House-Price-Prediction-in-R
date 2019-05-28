@@ -47,3 +47,23 @@ abline(0,0, col = 'Red')
 qqnorm(model$residuals)
 qqline(model$residuals, col = 'red')
 
+
+# Multiple Regression
+model_1 <- lm(formula = Price ~ Living.Area + Bedrooms + Fireplaces, data = real_estate_data)
+
+anova(model_1)
+
+confint(model_1, level = 0.95)
+
+#Converting to Central.Air, Waterfront, and New Construct into categorical variables
+
+real_estate_data$Central.Air <- factor(real_estate_data$Central.Air)
+real_estate_data$Waterfront <- factor(real_estate_data$Waterfront)
+real_estate_data$New.Construct <- factor(real_estate_data$New.Construct)
+
+
+
+m0 <- lm(Price~. ,data=real_estate_data); summary(m0)
+
+m.step<- step(m0, direction = "backward")
+
