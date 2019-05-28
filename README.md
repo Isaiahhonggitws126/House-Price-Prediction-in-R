@@ -120,7 +120,7 @@ SST = SSE + SSR = 858466.15274
 
 ```
 
-### Confidence Interval 
+### Confidence Interval for Multiple Regression Model
 
 ```
 confint(model_1, level = 0.95)
@@ -135,13 +135,13 @@ Bedrooms    -28389.2834 -3358.4636
 Fireplaces  -14539.1117 16815.6622
 ```
 
-### Hypothesis Test for Multiple Regression
+### Hypothesis Test for Multiple Regression Model
 
 ```
 F - Statistic: 122.8
 P – Value: < 2.2e-16
-Hypothesis Test: 〖 H〗_0:β_(1 Living.Area)  +〖 β〗_(2 Bedrooms) + β_(3 Fireplaces) = 0 
-	              H_A: β_(1 Living.Area)  +〖 β〗_(2 Bedrooms) + β_(3 Fireplaces) ≠ 0 
+Hypothesis Test: H_0: β_1( Living.Area) + B_2(Bedrooms) + β_3(Fireplaces) = 0 
+	         H_A: β_1( Living.Area) + B_2(Bedrooms) + β_3(Fireplaces) ≠ 0 
 
 ```
 
@@ -154,8 +154,8 @@ As indicated from the table, the P-value for each variable are exceptionally sma
 ```
 P-Value: 0.8864
 T-Statistic: 0.143
-Hypothesis Test:  H_0: β_(3 FirePlaces) = 0
-	              H_A: β_(3 Fireplaces) ≠ 0
+Hypothesis Test:  H_0: β_3(FirePlaces) = 0
+	          H_A: β_3(Fireplaces) ≠ 0
 ```
 
 Conclusion:
